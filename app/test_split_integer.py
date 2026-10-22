@@ -20,7 +20,6 @@ def test_should_add_zeros_when_value_is_less_than_number_of_parts() -> None:
     assert split_integer(2, 4) == [0, 0, 1, 1]
 
 def test_number_of_parts_and_difference_between_parts() -> None:
-        result = split_integer(17, 4)
-
-        assert len(result) == 4
-        assert max(result) - min(result) <= 1
+    result = split_integer(17, 4)
+    assert len(result) == 4
+    assert max(result) - min(result) <= 1
